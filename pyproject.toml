@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "GenerativeAI-Project"
+version = "0.0.0"
+description = "A description of your Generative AI project."
+readme = "README.md"  # if you have one
+license = {text = "MIT"}  # adjust as needed
+authors = [
+  { name = "Mohit Bajpai", email = "mohitbajpai998@gmail.com" }
+]
+dependencies = [
+  "sentence-transformers==2.2.2",
+  "langchain",
+  "flask",
+  "pypdf",
+  "python-dotenv",
+  "pinecone[grpc]",
+  "langchain-pinecone",
+  "langchain_community",
+  "langchain_openai",
+  "langchain_experimental"
+]
